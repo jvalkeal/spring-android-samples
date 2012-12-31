@@ -1,0 +1,8 @@
+.DS_Store
+bin
+gen
+local.properties
+target
+.project
+.classpath
+.settings

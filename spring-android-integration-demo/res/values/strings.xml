@@ -1,0 +1,24 @@
+<resources>
+    
+    <string name="base_server_url">http://192.168.0.9:8080/images/100x100/</string>
+    
+    <string name="app_name">Spring Integration Demos</string>
+    <string name="title_activity_launch">Demos</string>
+
+    <string name="demo_imagegrid_nocache_name">Imagegrid Direct Download</string>
+    <string name="demo_imagegrid_nocache_desc">No caching, images downloaded everytime when needed.</string>
+    <string name="demo_imagegrid_memcache_name">Imagegrid Memory Cache</string>
+    <string name="demo_imagegrid_memcache_desc">Images cached only on memory when downloaded.</string>
+    <string name="demo_imagegrid_diskcache_name">Imagegrid Only Disk Cache</string>
+    <string name="demo_imagegrid_diskcache_desc">Images cached only on disk.</string>
+    <string name="demo_imagegrid_memdiskcache_name">Imagegrid Complete Caching</string>
+    <string name="demo_imagegrid_memdiskcache_desc">Images cached on memory and on disk.</string>
+    <string name="demo_imagegrid_limitedmemdiskcache_name">Imagegrid Limited Caching</string>
+    <string name="demo_imagegrid_limitedmemdiskcache_desc">Images cached on memory and on disk with low limit.</string>
+    
+    <string name="demogroup_cache_name">Image Caching</string>
+    <string name="demogroup_cache_desc">Caching demos, check source code for cache settings.</string>
+    <string name="demogroup_image_name">Image</string>
+    <string name="demogroup_image_desc">Image Processing Demos</string>
+    
+</resources>

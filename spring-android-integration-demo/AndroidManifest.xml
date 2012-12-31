@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.springframework.android.imagecaching"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".CustomApp"
+        android:icon="@drawable/spring_android"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".launch.LaunchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".imagegrid.NoCacheDemo"
+            android:label="@string/demo_imagegrid_nocache_name" />
+        <activity
+            android:name=".imagegrid.MemCacheDemo"
+            android:label="@string/demo_imagegrid_memcache_name" />
+        <activity
+            android:name=".imagegrid.DiskCacheDemo"
+            android:label="@string/demo_imagegrid_diskcache_name" />
+        <activity
+            android:name=".imagegrid.MemDiskCacheDemo"
+            android:label="@string/demo_imagegrid_memdiskcache_name" />
+        <activity
+            android:name=".imagegrid.LimitedCacheDemo"
+            android:label="@string/demo_imagegrid_limitedmemdiskcache_name" />
+        
+        <service
+            android:name="org.springframework.integration.image.core.NetworkImageService"
+            android:enabled="true" />
+        <service
+            android:name="org.springframework.android.imagecaching.imagegrid.NoCacheImageService"
+            android:enabled="true" />
+        <service
+            android:name="org.springframework.android.imagecaching.imagegrid.DiskCacheImageService"
+            android:enabled="true" />
+        <service
+            android:name="org.springframework.android.imagecaching.imagegrid.LimitedCacheImageService"
+            android:enabled="true" />
+        </application>
+
+</manifest>
